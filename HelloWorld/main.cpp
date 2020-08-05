@@ -46,16 +46,29 @@
  */
 
 
+//int main(int argc, char *argv[])
+//{
+//    QApplication a(argc, argv);
+
+//    NewsPapaer newspaper("Newspaper A");
+//    Reader reader;
+
+//    QObject::connect(&newspaper,&NewsPapaer::newPaper,&reader,&Reader::receiveNewsPaper);
+//    newspaper.send();
+
+//    return a.exec();
+//}
+
+
+
+
+//learn4 ; MainWindow
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    NewsPapaer newspaper("Newspaper A");
-    Reader reader;
-
-    QObject::connect(&newspaper,&NewsPapaer::newPaper,&reader,&Reader::receiveNewsPaper);
-    newspaper.send();
-
+    MainWindow win;
+    win.show();
     return a.exec();
 }
 
